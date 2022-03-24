@@ -4,19 +4,24 @@
 body {
     color: black;
     font-size: .75em;
+    margin: none;
+    padding: none;
 }
 nav {
     width: 100%;
     height: 30vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
     font-style: none;
+    gap: 1px;
 }
 .nav_left {
-    width: 33%;
+    position: sticky;
+    top: 15vh;
+    width: 38%;
     height: 15vh;
     display: flex;
     flex-direction: row;
@@ -27,18 +32,41 @@ nav {
 
 }
 .nav_center {
-    width: 33%;
+    width: 20%;
     height: 30vh;
+    flex-basis: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
     list-style: none;
     padding-top: 3em;
-
+}
+.center_initial {
+    height: 20vh;
+    flex-basis: 20%;
+    align-self: center;
+    font-size: 10em;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+    padding-left: 0px;
+    padding-bottom: 1em;
+}
+.center_logo {
+    position: sticky;
+    top: 10vh;
+    height: 10vh;
+    flex-basis: 20%;
+    align-self: center;
+    font-size: 2em;
+    font-family: cursive;
+    padding-left: 0px;
+    padding-bottom: 1em;
 }
 .nav_right {
-    width: 33%;
+    position: sticky;
+    top: 15vh;
+    width: 38%;
     height: 15vh;
     display: flex;
     flex-direction: row;
@@ -46,6 +74,13 @@ nav {
     list-style: none;
     padding-top: 3em;
     border-bottom: 1px solid lightgray;
+}
+#button {
+    background-color: red;
+    color: white;
+    border-color: white;
+    border-radius: 8px;
+    padding: 5px 10px;
 }
 li {
     padding-left: 2em;
