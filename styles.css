@@ -7,65 +7,34 @@ body {
     margin: none;
     padding: none;
 }
+/* ******** Navbar Begin ************* */
 nav {
+    position: sticky;
+    top: .5%;
     width: 100%;
-    height: 30vh;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-size: 1em;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-style: none;
     gap: 1px;
+    border-bottom: 1px solid lightgray;
 }
 .nav_left {
-    position: sticky;
-    top: 15vh;
     width: 38%;
     height: 15vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     list-style: none;
     padding-top: 3em;
-    border-bottom: 1px solid lightgray;
-
-}
-.nav_center {
-    width: 20%;
-    height: 30vh;
-    flex-basis: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    list-style: none;
-    padding-top: 3em;
-}
-.center_initial {
-    height: 20vh;
-    flex-basis: 20%;
-    align-self: center;
-    font-size: 10em;
-    font-family: 'Times New Roman', Times, serif;
-    color: red;
-    padding-left: 0px;
-    padding-bottom: 1em;
-}
-.center_logo {
-    position: sticky;
-    top: 10vh;
-    height: 10vh;
-    flex-basis: 20%;
-    align-self: center;
-    font-size: 2em;
-    font-family: cursive;
-    padding-left: 0px;
-    padding-bottom: 1em;
 }
 .nav_right {
-    position: sticky;
-    top: 15vh;
+    /* position: sticky;
+    top: 15vh; */
     width: 38%;
     height: 15vh;
     display: flex;
@@ -73,9 +42,13 @@ nav {
     justify-content: center;
     list-style: none;
     padding-top: 3em;
-    border-bottom: 1px solid lightgray;
 }
-#button {
+.nav_right li a {
+    padding-top: 0px;
+    color: black;
+    text-decoration: none;
+}
+.button {
     background-color: red;
     color: white;
     border-color: white;
@@ -84,4 +57,76 @@ nav {
 }
 li {
     padding-left: 2em;
+}
+/* ******** Navbar End ************* */
+/* ******** Header Begin ************* */
+header {
+    margin: none;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: .center_initial;
+    align-items: center;
+    list-style: none;
+    padding-top: none;
+}
+.center_initial {
+    position: relative;
+    transform: translate(50px, -150px);
+    height: 20vh;
+    width: 60%;
+    flex-basis: 20%;
+    font-size: 11em;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+    background-color: white;
+    padding-left: 0px;
+    padding-bottom: 1em;
+}
+.center_logo {
+    position: sticky;
+    transform: translateY(-150px);
+    top: 1%;
+    height: 10vh;
+    flex-basis: 20%;
+    font-size: 2em;
+    font-family: cursive;
+    font-style: italic;
+    padding: 1em;
+}
+/* ******** Header End ************* */
+.container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    gap: 1%;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 1%;
+
+
+}
+.headliner {
+    font-size: ;
+}
+.left_content {
+    padding-right: 1%;
+    border-right: 1px solid lightgrey;
+    order: -1;
+    align-self: flex-start;
+    font-size: small;
+}
+.right_content {
+    padding-left: 1%;
+    border-left: 1px solid lightgrey;
+    align-self: flex-start;
+    font-size:small;
+}
+h3 {
+    font-size: .25em;
 }
