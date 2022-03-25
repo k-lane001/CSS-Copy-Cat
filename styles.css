@@ -33,8 +33,6 @@ nav {
     padding-top: 3em;
 }
 .nav_right {
-    /* position: sticky;
-    top: 15vh; */
     width: 38%;
     height: 15vh;
     display: flex;
@@ -44,7 +42,8 @@ nav {
     padding-top: 3em;
 }
 .nav_right li a {
-    padding-top: 0px;
+    align-self: center;
+    padding-top: 1.5px;
     color: black;
     text-decoration: none;
 }
@@ -90,43 +89,95 @@ header {
 }
 .center_logo {
     position: sticky;
+    top: 5%;
     transform: translateY(-150px);
-    top: 1%;
     height: 10vh;
     flex-basis: 20%;
     font-size: 2em;
     font-family: cursive;
     font-style: italic;
-    padding: 1em;
+    padding-left: .75em;
 }
 /* ******** Header End ************* */
+/* ********** Main Content ********* */
 .container {
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
     gap: 1%;
-    border-bottom: 1px solid lightgrey;
     margin-bottom: 1%;
-
-
 }
 .headliner {
-    font-size: ;
+    font-size: 1.25em;
+    width: 50%;
+    height: 70vh;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
 }
 .left_content {
-    padding-right: 1%;
+    width: 25%;
+    height: 70vh;
+    padding-right: 3vh;
     border-right: 1px solid lightgrey;
     order: -1;
     align-self: flex-start;
-    font-size: small;
+    border-bottom: 1px solid lightgrey;
+}
+h2 {
+    padding-top: 3vh;
+    font-size: 1em;
+
 }
 .right_content {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 70vh;
     padding-left: 1%;
+    padding-top: 0%;
     border-left: 1px solid lightgrey;
     align-self: flex-start;
-    font-size:small;
 }
-h3 {
-    font-size: .25em;
+.snippet1 {
+    display: flex;
+    flex-direction: row;
+    padding-top: none;
+    padding-bottom: 2em;
+    border-bottom: 1px solid lightgrey;
+}
+.snippet2, .snippet3, .snippet4 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    border-bottom: 1px solid lightgrey;
+}
+.snippet1_text, .snippet2_text, .snippet3_text, .snippet4_text {
+    display: block;
+    height: 2vh;
+    width: 70%;
+    font-size: 1em;
+    padding-right: .5em;
+    padding-bottom: 2em;
+}
+
+cite {
+    font-size: .85em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+figcaption {
+    font-size: .5em;
+}
+.crossword {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 1em;
+    background-color: white;
+}
+.btn {
+    width: 98%;
+    border-radius: none;
 }
